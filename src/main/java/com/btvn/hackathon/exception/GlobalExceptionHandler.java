@@ -18,7 +18,6 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public ResponseEntity<ApiDataResponse<Map<String, String>>> handleValidationExceptions(MethodArgumentNotValidException ex) {
         Map<String, String> errors = new HashMap<>();
-        log.error(">>> LOGGER : " + ex.getMessage());
         ex.getBindingResult().getFieldErrors().forEach(error ->
                 errors.put(error.getField(), error.getDefaultMessage()));
 
@@ -29,7 +28,6 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(NotFoundException.class)
     public ResponseEntity<ApiDataResponse<Object>> handleNotFound(NotFoundException ex) {
-        log.error(">>> LOGGER : " + ex.getMessage());
         return new ResponseEntity<>(new ApiDataResponse<>(
                 false, ex.getMessage(), null, HttpStatus.NOT_FOUND
         ), HttpStatus.NOT_FOUND);
@@ -37,7 +35,6 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(NotValidValue.class)
     public ResponseEntity<ApiDataResponse<Object>> handleNotValidValue(NotValidValue ex) {
-        log.error(">>> LOGGER : " + ex.getMessage());
         return new ResponseEntity<>(new ApiDataResponse<>(
                 false, ex.getMessage(), null, HttpStatus.BAD_REQUEST
         ), HttpStatus.BAD_REQUEST);

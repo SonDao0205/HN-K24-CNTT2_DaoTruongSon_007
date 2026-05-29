@@ -33,7 +33,6 @@ public class RoomServiceImpl implements RoomService {
 
     @Override
     public Room findById(Long id) {
-        log.info(">>> LOGGER : Tìm kiếm theo id : "+ id);
         return roomRepository.findById(id).orElseThrow(() -> {
             log.error(">>> LOGGER : Không tìm thấy phòng với id này!");
             return new NotFoundException("Không tìm thấy phòng với id này!");
