@@ -866,3 +866,105 @@ com.btvn.hackathon.exception.NotValidValue: Giá phòng phải lớn hơn 0!
 2026-05-29T13:42:11.529+07:00 ERROR 3230 --- [Hackathon] [http-nio-8080-exec-1] c.b.h.service.impl.RoomServiceImpl       : >>> LOGGER : Không tìm thấy phòng với id này!
 2026-05-29T13:42:11.529+07:00 ERROR 3230 --- [Hackathon] [http-nio-8080-exec-1] c.b.h.exception.GlobalExceptionHandler   : >>> LOGGER : Không tìm thấy phòng với id này!
 2026-05-29T13:42:11.530+07:00  WARN 3230 --- [Hackathon] [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.btvn.hackathon.exception.NotFoundException: Không tìm thấy phòng với id này!]
+2026-05-29T13:43:58.091+07:00  INFO 3230 --- [Hackathon] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-29T13:43:58.093+07:00  INFO 3230 --- [Hackathon] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-05-29T13:43:58.095+07:00  INFO 3230 --- [Hackathon] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-29T13:43:58.095+07:00  INFO 3230 --- [Hackathon] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown initiated...
+2026-05-29T13:43:58.097+07:00  INFO 3230 --- [Hackathon] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown completed.
+2026-05-29T13:47:22.082+07:00  INFO 4661 --- [Hackathon] [restartedMain] c.btvn.hackathon.HackathonApplication    : Starting HackathonApplication using Java 17.0.9 with PID 4661 (/Users/mac/Documents/Study/Rikkei/Ki 3/Session_05_Java_WebService/Session12/Hackathon/build/classes/java/main started by mac in /Users/mac/Documents/Study/Rikkei/Ki 3/Session_05_Java_WebService/Session12/Hackathon)
+2026-05-29T13:47:22.084+07:00  INFO 4661 --- [Hackathon] [restartedMain] c.btvn.hackathon.HackathonApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-05-29T13:47:22.107+07:00  INFO 4661 --- [Hackathon] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-05-29T13:47:22.108+07:00  INFO 4661 --- [Hackathon] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-05-29T13:47:22.426+07:00  INFO 4661 --- [Hackathon] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-29T13:47:22.453+07:00  INFO 4661 --- [Hackathon] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 1 JPA repository interface.
+2026-05-29T13:47:22.726+07:00  INFO 4661 --- [Hackathon] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-05-29T13:47:22.732+07:00  INFO 4661 --- [Hackathon] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-29T13:47:22.732+07:00  INFO 4661 --- [Hackathon] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-29T13:47:22.750+07:00  INFO 4661 --- [Hackathon] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 642 ms
+2026-05-29T13:47:22.844+07:00  INFO 4661 --- [Hackathon] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-29T13:47:22.880+07:00  INFO 4661 --- [Hackathon] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-29T13:47:23.117+07:00  INFO 4661 --- [Hackathon] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-29T13:47:23.135+07:00  INFO 4661 --- [Hackathon] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-29T13:47:23.286+07:00  INFO 4661 --- [Hackathon] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@40c46dd3
+2026-05-29T13:47:23.287+07:00  INFO 4661 --- [Hackathon] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-29T13:47:23.320+07:00  WARN 4661 --- [Hackathon] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-29T13:47:23.330+07:00  INFO 4661 --- [Hackathon] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/Hackathon?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.4
+	Default catalog/schema: Hackathon/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-29T13:47:23.792+07:00  INFO 4661 --- [Hackathon] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-29T13:47:23.819+07:00  INFO 4661 --- [Hackathon] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-29T13:47:23.859+07:00  INFO 4661 --- [Hackathon] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-29T13:47:23.986+07:00  WARN 4661 --- [Hackathon] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-29T13:47:24.171+07:00  INFO 4661 --- [Hackathon] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-05-29T13:47:24.175+07:00  INFO 4661 --- [Hackathon] [restartedMain] c.btvn.hackathon.HackathonApplication    : Started HackathonApplication in 2.286 seconds (process running for 2.655)
+2026-05-29T13:47:29.562+07:00  INFO 4661 --- [Hackathon] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-29T13:47:29.563+07:00  INFO 4661 --- [Hackathon] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-29T13:47:29.563+07:00  INFO 4661 --- [Hackathon] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-05-29T13:47:29.587+07:00  INFO 4661 --- [Hackathon] [http-nio-8080-exec-2] c.b.hackathon.controller.RoomController  : >>> LOGGER : Lấy danh sách phòng thành công!
+2026-05-29T13:47:29.592+07:00  INFO 4661 --- [Hackathon] [http-nio-8080-exec-2] c.btvn.hackathon.aspect.LoggingAspect    : >>> LOGGER: findAll
+2026-05-29T13:47:29.867+07:00  WARN 4661 --- [Hackathon] [http-nio-8080-exec-2] ration$PageModule$WarningLoggingModifier : Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2026-05-29T13:47:46.856+07:00  INFO 4661 --- [Hackathon] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-29T13:47:46.860+07:00  INFO 4661 --- [Hackathon] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-05-29T13:47:46.862+07:00  INFO 4661 --- [Hackathon] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-29T13:47:46.865+07:00  INFO 4661 --- [Hackathon] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-29T13:47:46.869+07:00  INFO 4661 --- [Hackathon] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-05-29T13:51:49.505+07:00  INFO 4711 --- [Hackathon] [restartedMain] c.btvn.hackathon.HackathonApplication    : Starting HackathonApplication using Java 17.0.9 with PID 4711 (/Users/mac/Documents/Study/Rikkei/Ki 3/Session_05_Java_WebService/Session12/Hackathon/build/classes/java/main started by mac in /Users/mac/Documents/Study/Rikkei/Ki 3/Session_05_Java_WebService/Session12/Hackathon)
+2026-05-29T13:51:49.515+07:00  INFO 4711 --- [Hackathon] [restartedMain] c.btvn.hackathon.HackathonApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-05-29T13:51:49.575+07:00  INFO 4711 --- [Hackathon] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-05-29T13:51:49.575+07:00  INFO 4711 --- [Hackathon] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-05-29T13:51:49.996+07:00  INFO 4711 --- [Hackathon] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-29T13:51:50.024+07:00  INFO 4711 --- [Hackathon] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 1 JPA repository interface.
+2026-05-29T13:51:50.280+07:00  INFO 4711 --- [Hackathon] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-05-29T13:51:50.286+07:00  INFO 4711 --- [Hackathon] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-29T13:51:50.287+07:00  INFO 4711 --- [Hackathon] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-29T13:51:50.304+07:00  INFO 4711 --- [Hackathon] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 729 ms
+2026-05-29T13:51:50.396+07:00  INFO 4711 --- [Hackathon] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-29T13:51:50.426+07:00  INFO 4711 --- [Hackathon] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-29T13:51:50.646+07:00  INFO 4711 --- [Hackathon] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-29T13:51:50.661+07:00  INFO 4711 --- [Hackathon] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-29T13:51:50.804+07:00  INFO 4711 --- [Hackathon] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6efbd360
+2026-05-29T13:51:50.805+07:00  INFO 4711 --- [Hackathon] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-29T13:51:50.831+07:00  WARN 4711 --- [Hackathon] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-29T13:51:50.841+07:00  INFO 4711 --- [Hackathon] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/Hackathon?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.4
+	Default catalog/schema: Hackathon/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-29T13:51:51.264+07:00  INFO 4711 --- [Hackathon] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-29T13:51:51.293+07:00  INFO 4711 --- [Hackathon] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-29T13:51:51.335+07:00  INFO 4711 --- [Hackathon] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-29T13:51:51.457+07:00  WARN 4711 --- [Hackathon] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-29T13:51:51.644+07:00  INFO 4711 --- [Hackathon] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-05-29T13:51:51.647+07:00  INFO 4711 --- [Hackathon] [restartedMain] c.btvn.hackathon.HackathonApplication    : Started HackathonApplication in 2.38 seconds (process running for 2.789)
+2026-05-29T13:51:58.842+07:00  INFO 4711 --- [Hackathon] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-29T13:51:58.843+07:00  INFO 4711 --- [Hackathon] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-29T13:51:58.843+07:00  INFO 4711 --- [Hackathon] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-05-29T13:51:58.872+07:00  INFO 4711 --- [Hackathon] [http-nio-8080-exec-1] c.btvn.hackathon.aspect.LoggingAspect    : >>> LOGGER: findAll
+2026-05-29T13:51:59.137+07:00  WARN 4711 --- [Hackathon] [http-nio-8080-exec-1] ration$PageModule$WarningLoggingModifier : Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2026-05-29T13:52:04.988+07:00  INFO 4711 --- [Hackathon] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-29T13:52:04.992+07:00  INFO 4711 --- [Hackathon] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-05-29T13:52:04.995+07:00  INFO 4711 --- [Hackathon] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-29T13:52:04.997+07:00  INFO 4711 --- [Hackathon] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-29T13:52:05.000+07:00  INFO 4711 --- [Hackathon] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

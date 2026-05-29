@@ -5,7 +5,6 @@ import com.btvn.hackathon.dto.RoomDTO;
 import com.btvn.hackathon.entity.Room;
 import com.btvn.hackathon.service.RoomService;
 import jakarta.validation.Valid;
-import jakarta.websocket.server.PathParam;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -32,7 +31,6 @@ public class RoomController {
             @RequestParam(defaultValue = "1") int page,
             @RequestParam(defaultValue = "5") int size) {
         Pageable pageable = PageRequest.of(page - 1, size);
-        log.info(">>> LOGGER : Lấy danh sách phòng thành công!");
         return new ResponseEntity<>(new ApiDataResponse<>(
                 true,
                 "Lấy danh sách phòng thành công!",
@@ -44,7 +42,6 @@ public class RoomController {
     @PostMapping
     public ResponseEntity<ApiDataResponse<Room>> save(@Valid @RequestBody RoomDTO dto) {
         Room createdRoom = roomService.createRoom(dto);
-        log.info(">>> LOGGER : Tạo phòng thành công!");
         return new ResponseEntity<>(new ApiDataResponse<>(
                 true,
                 "Tạo phòng thành công!",
@@ -57,7 +54,6 @@ public class RoomController {
     public ResponseEntity<ApiDataResponse<Room>> update(@Valid @RequestBody RoomDTO dto, @PathVariable Long id) {
         System.out.println("Update");
         Room updatedRoom = roomService.updateRoom(dto, id);
-        log.info(">>> LOGGER : Cập nhật toàn bộ thông tin thành công!");
         return new ResponseEntity<>(new ApiDataResponse<>(
                 true,
                 "Cập nhật toàn bộ thông tin thành công!",
@@ -69,7 +65,6 @@ public class RoomController {
     @PatchMapping("/{id}")
     public ResponseEntity<ApiDataResponse<Room>> path(@RequestBody RoomDTO dto, @PathVariable Long id) {
         Room updatedRoom = roomService.pathRoom(dto, id);
-        log.info(">>> LOGGER : Cập nhật 1 phần thông tin thành công!");
         return new ResponseEntity<>(new ApiDataResponse<>(
                 true,
                 "Cập nhật 1 phần thông tin thành công!",
@@ -81,7 +76,6 @@ public class RoomController {
     @DeleteMapping("/{id}")
     public ResponseEntity<ApiDataResponse<Room>> delete(@PathVariable Long id) {
         roomService.deleteRoom(id);
-        log.info(">>> LOGGER : Xoá phòng thành công!");
         return new ResponseEntity<>(new ApiDataResponse<>(
                 true,
                 "Xoá phòng thành công!",
